@@ -80,7 +80,14 @@ Drone Command Mapping
 ### 1. Environment Setup
 Activate the virtual environment and install dependencies:
 ```bash
+# Create the virtual environment (only need to do this once)
+python3 -m venv venv_detect
+
+# Activate the virtual environment
 source venv_detect/bin/activate
+
+# Upgrade pip and install required packages
+pip install --upgrade pip
 pip install mediapipe tensorflow opencv-python numpy
 ```
 ### 2. Required Models
